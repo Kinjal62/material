@@ -1,0 +1,14 @@
+.mdc-card{
+	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+.mdc-card{
+	margin: 20px 50px;
+	padding: 20px 50px;
+}
+.mdc-layout-grid__inner,.mdc-switch{
+	margin-top: 15px;
+}
+.mdc-button{
+	margin-top: 15px;
+	border: 1px solid;
+}

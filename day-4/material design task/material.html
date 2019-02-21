@@ -1,0 +1,131 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script type="text/javascript" src="javascript/custom.js"></script>
+	<div class="mdc-card">
+		<center><h1>Registration Form</h1></center>
+
+		<!-- input section -->
+		<div class="mdc-text-field myText1">
+			<input type="text" id="my-text-field" class="mdc-text-field__input">
+			<label class="mdc-floating-label" for="my-text-field">Name</label>
+			<div class="mdc-line-ripple"></div>
+		</div>
+		<div class="mdc-text-field myText2">
+			<input type="text" id="my-text-field" class="mdc-text-field__input">
+			<label class="mdc-floating-label" for="my-text-field">Address</label>
+			<div class="mdc-line-ripple"></div>
+		</div>
+		<div class="mdc-text-field myText3">
+			<input type="text" id="my-text-field" class="mdc-text-field__input">
+			<label class="mdc-floating-label" for="my-text-field">Country</label>
+			<div class="mdc-line-ripple"></div>
+		</div>
+		<!-- switch section -->
+		<!-- <div class="mdc-layout-grid"> -->
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell--span-6">
+					<div class="mdc-switch mySwitch1">
+						<div class="mdc-switch__track"></div>
+						<div class="mdc-switch__thumb-underlay">
+							<div class="mdc-switch__thumb">
+								<input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+							</div>
+						</div>
+					</div>
+					<label for="basic-switch">Garden</label>
+				</div>
+				<div class="mdc-layout-grid__cell">
+					<div class="mdc-switch mySwitch2">
+						<div class="mdc-switch__track"></div>
+						<div class="mdc-switch__thumb-underlay">
+							<div class="mdc-switch__thumb">
+								<input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+							</div>
+						</div>
+					</div>
+					<label for="basic-switch">Swimming Pull</label>
+				</div>
+			</div>
+			<!-- </div> -->
+			<!-- button section -->	
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell">
+					<button class="mdc-button btnsubmit">
+						<span class="mdc-button__label">Submit</span>
+					</button>
+				</div>
+				<div class="mdc-layout-grid__cell">
+					<button class="mdc-button btnreset">
+						<span class="mdc-button__label">Cancel</span>
+					</button>
+				</div>
+				<div class="mdc-layout-grid__cell">
+					<button class="mdc-button btnclear">
+						<span class="mdc-button__label">Reset</span>
+					</button>
+				</div>
+			</div>
+
+		</div>
+		<!-- tab section -->
+		
+		<div class="mdc-tab-bar" role="tablist">
+			<div class="mdc-tab-scroller">
+				<div class="mdc-tab-scroller__scroll-area">
+					<div class="mdc-tab-scroller__scroll-content">
+						<button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+							<span class="mdc-tab__content">
+								<span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+								<span class="mdc-tab__text-label">Registration</span>
+							</span>
+							<span class="mdc-tab-indicator mdc-tab-indicator--active">
+								<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+							</span>
+							<span class="mdc-tab__ripple"></span>
+						</button>
+						<button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+							<span class="mdc-tab__content">
+								<span class="mdc-tab__icon material-icons" aria-hidden="true">bookmark</span>
+								<span class="mdc-tab__text-label">Service</span>
+							</span>
+							<span class="mdc-tab-indicator">
+								<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+							</span>
+							<span class="mdc-tab__ripple"></span>
+						</button>
+						<button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+							<span class="mdc-tab__content">
+								<!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span> -->
+								<span class="mdc-tab__text-label">product</span>
+							</span>
+							<span class="mdc-tab-indicator">
+								<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+							</span>
+							<span class="mdc-tab__ripple"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			mdc.textField.MDCTextField.attachTo(document.querySelector('.myText1'));
+			mdc.textField.MDCTextField.attachTo(document.querySelector('.myText2'));
+			mdc.textField.MDCTextField.attachTo(document.querySelector('.myText3'));
+			mdc.switchControl.MDCSwitch.attachTo(document.querySelector('.mySwitch1'));
+			mdc.switchControl.MDCSwitch.attachTo(document.querySelector('.mySwitch2'));
+			// mdc.buttonRipple.MDCRipple.attachTo(document.querySelector('.btnsubmit'));
+			// mdc.buttonRipple.MDCRipple.attachTo(document.querySelector('.btnreset'));
+			// mdc.buttonRipple.MDCRipple.attachTo(document.querySelector('.btnclear'));
+			mdc.tabBar.MDCTabBar.attachTo(document.querySelector('.mdc-tab-bar'));
+		</script>
+	</body>
+	</html>
